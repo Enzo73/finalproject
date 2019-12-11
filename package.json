@@ -1,0 +1,23 @@
+{
+	"name": "Final",
+	"verson": "1.0.0",
+	"description": "Website to introduce German",
+	"main": "server.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"build": "handlebars views/partials/post.handlebars -f public/postTemplate.js",
+		"prestart": "npm run build",
+		"start": "node server.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Enzo73/finalproject"
+	},
+	"author": "Sibai Lou",
+	"license": "UNLICENSED",
+	"dependencies": {
+		"express": "^4.17.1",
+		"express-handlebars": "^3.1.0",
+		"handlebars": "^4.5.3"
+	}
+}
